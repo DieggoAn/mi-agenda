@@ -1,0 +1,210 @@
+.detalle-container {
+  width: 100%;
+}
+
+.detalle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 10px;
+}
+
+.detalle-nombre {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111827;
+  margin: 0;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #9ca3af;
+}
+
+.subdatos-section {
+  margin-bottom: 25px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.no-data {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.subdatos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.subdato-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #f3f4f6;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.badge-personal { background-color: #d1fae5; color: #065f46; }
+.badge-trabajo { background-color: #dbeafe; color: #1e40af; }
+.badge-casa { background-color: #fef3c7; color: #92400e; }
+
+.dato-tipo {
+  font-size: 14px;
+  color: #374151;
+}
+
+.dato-valor {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #4b5563;
+}
+
+.btn-quitar {
+  background-color: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.agregar-dato-box {
+  background-color: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.box-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #374151;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.agregar-dato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.select-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+}
+
+.form-row-submit {
+  display: flex;
+  gap: 10px;
+}
+
+.valor-input {
+  flex: 3;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.btn-add-dato {
+  width: 100%;             
+  padding: 12px 20px;       
+  font-size: 16px;         
+  font-weight: 600;        
+  border-radius: 6px;       
+  cursor: pointer;          
+  transition: all 0.2s ease;
+  
+  background-color: #059669; 
+  color: white;
+  border: none;
+}
+
+/* Altura fija para que la lista de subdatos no se mueva */
+.error-container-fixed {
+  height: 42px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.error-message-box {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+/* src/styles/DetalleContacto.css */
+
+/* Contenedor flexible para los tres elementos */
+.inputs-row-container {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  flex-wrap: wrap; /* Permite que los elementos bajen si no caben en la pantalla */
+}
+
+/* Distribución proporcional de anchos en pantallas normales */
+.inputs-row-container .input-cod {
+  flex: 0 0 60px; /* Ancho fijo y compacto exclusivo para el código (+56) */
+  text-align: center;
+}
+
+.inputs-row-container .input-tel {
+  flex: 1 1 120px; /* Crece proporcionalmente ocupando el espacio del teléfono */
+}
+
+.inputs-row-container .input-mail {
+  flex: 2 1 180px; /* Tiene mayor prioridad de espacio para correos largos */
+}
+
+/* Ajuste automático exclusivo para pantallas de teléfonos muy pequeños */
+@media (max-width: 480px) {
+  .inputs-row-container {
+    flex-direction: column; /* Cambia a formato vertical en pantallas diminutas */
+    gap: 8px;
+  }
+  .inputs-row-container .input-cod,
+  .inputs-row-container .input-tel,
+  .inputs-row-container .input-mail {
+    flex: 1 1 auto; /* En móviles vuelven a tomar el 100% del ancho para ser cómodos */
+    width: 100%;
+  }
+}
