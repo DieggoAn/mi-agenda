@@ -52,7 +52,7 @@ function FormularioNuevoContacto({ alGuardar, alCancelar }) {
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
             className="form-input"
-            placeholder="Ej. Geraldo"
+            placeholder="Ej. Diego"
           />
         </div>
 
@@ -63,7 +63,7 @@ function FormularioNuevoContacto({ alGuardar, alCancelar }) {
             value={apellido}
             onChange={(e) => setApellido(e.target.value)}
             className="form-input"
-            placeholder="Ej. Valenzuela"
+            placeholder="Ej. Aguero"
           />
         </div>
 
