@@ -1,16 +1,16 @@
-# React + Vite
+# 📇 Agenda SPA - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Este es el frontend de una aplicación de Agenda de Contactos Single Page Application (SPA) construida con **React + Vite** y conectada a **Supabase** mediante peticiones HTTP estructuradas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Configuración Inicial (Variables de Entorno)
 
-## React Compiler
+Por motivos de seguridad, las credenciales de acceso a la base de datos de Supabase **no se encuentran incluidas** en el código fuente ni subidas a este repositorio. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Para ejecutar el proyecto de forma local, debes configurar tus propias claves siguiendo estos pasos:
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. En la **carpeta raíz (root)** del proyecto (al mismo nivel que el archivo `package.json`), modifique el archivo llamado .env.example o crea un archivo nuevo llamado exactamente:
+   ```text
+   .env
+   ```
