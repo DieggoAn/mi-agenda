@@ -216,7 +216,7 @@ function DetalleContacto({ contacto }) {
               type="text"
               value={direccion}
               onChange={(e) => setDirección(e.target.value)}
-              placeholder="Dirección postal (Ej. Av. Alemania 123)"
+              placeholder="Dirección postal (Ej. Av. Rene Schneider 554)"
               className="form-input"
               style={{ marginTop: '8px' }}
             />
