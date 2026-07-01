@@ -10,7 +10,7 @@ Por motivos de seguridad, las credenciales de acceso a la base de datos de Supab
 
 Para ejecutar el proyecto de forma local, debes configurar tus propias claves siguiendo estos pasos:
 
-1. En la **carpeta raíz (root)** del proyecto (al mismo nivel que el archivo `package.json`), modifique el archivo llamado .env.example o crea un archivo nuevo llamado exactamente:
+1. En la **carpeta raíz (root)** del proyecto (al mismo nivel que el archivo `package.json`), modifique el archivo llamado .env.example y cambie el nombre a este:
    ```text
    .env
    ```
